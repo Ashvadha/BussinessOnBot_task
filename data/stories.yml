@@ -1,0 +1,47 @@
+version: "3.1"
+
+
+stories:
+- story: Greet and Goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Addition
+  steps:
+  - intent: addition
+    entities:
+    - num1: "6"
+    - num2: "4"
+    - operator: "+"
+  - action: action_math_operation
+
+- story: Subtraction
+  steps:
+  - intent: subtraction
+    entities:
+    - num1: "6"
+    - num2: "4"
+    - operator: "-"
+  - action: action_math_operation
+
+- story: Multiplication
+  steps:
+  - intent: multiplication
+    entities:
+    - num1: "6"
+    - num2: "4"
+    - operator: "*"
+  - action: action_math_operation
+
+- story: Division
+  steps:
+  - intent: division
+    entities:
+    - num1: "6"
+    - num2: "4"
+    - operator: "/"
+  - action: action_math_operation

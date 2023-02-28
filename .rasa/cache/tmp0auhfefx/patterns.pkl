@@ -1,0 +1,14 @@
+[
+  {
+    "name": "num1",
+    "pattern": "[0-9]+"
+  },
+  {
+    "name": "num2",
+    "pattern": "[0-9]+"
+  },
+  {
+    "name": "operator",
+    "pattern": "[+\\-*/]"
+  }
+]

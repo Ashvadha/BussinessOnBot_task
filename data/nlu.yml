@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see you later
+
+- intent: addition
+  examples: |
+    - add {num1} and {num2}
+    - {num1} plus {num2}
+    - sum of {num1} and {num2}
+    - {num1} added to {num2}
+
+- intent: subtraction
+  examples: |
+    - subtract {num2} from {num1}
+    - {num1} minus {num2}
+    - difference between {num1} and {num2}
+
+- intent: multiplication
+  examples: |
+    - multiply {num1} and {num2}
+    - {num1} times {num2}
+    - product of {num1} and {num2}
+
+- intent: division
+  examples: |
+    - divide {num1} by {num2}
+    - {num1} divided by {num2}
+    - {num1} over {num2}
+
+- regex: num1
+  examples: |
+    - [0-9]+
+
+- regex: num2
+  examples: |
+    - [0-9]+
+
+- regex: operator
+  examples: |
+    - [+\-*/]

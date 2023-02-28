@@ -1,0 +1,39 @@
+version: "3.1"
+
+
+intents:
+- greet
+- goodbye
+- addition
+- subtraction
+- multiplication
+- division
+
+entities:
+- num1
+- num2
+- operator
+
+actions:
+- utter_greet
+- utter_goodbye
+- action_math_operation
+- utter_iamabot
+- utter_invalid_operator
+
+responses:
+  utter_greet:
+  - text: "Hello! I am a simple math chatbot. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a nice day."
+
+  utter_math_result:
+  - text: "The result is {result}."
+
+  utter_invalid_operator:
+  - text: "Please enter the correct operator"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
